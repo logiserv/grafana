@@ -2866,7 +2866,6 @@
             "uid": "felcwwvnhajuoa"
           },
           "definition": "SELECT name FROM grafana.team LIMIT 50 ",
-          "hide": 2,
           "multi": true,
           "name": "Team",
           "options": [],
