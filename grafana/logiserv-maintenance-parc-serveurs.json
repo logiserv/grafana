@@ -2801,10 +2801,10 @@
           "allowCustomValue": false,
           "current": {
             "text": [
-              "PARC ATP"
+              "PARC LOGISERV"
             ],
             "value": [
-              "PARC ATP"
+              "PARC LOGISERV"
             ]
           },
           "datasource": {
@@ -2826,18 +2826,14 @@
             "queryType": "group"
           },
           "refresh": 1,
-          "regex": "",
+          "regex": "$equipe",
           "sort": 1,
           "type": "query"
         },
         {
           "current": {
-            "text": [
-              "All"
-            ],
-            "value": [
-              "$__all"
-            ]
+            "text": "All",
+            "value": "$__all"
           },
           "datasource": {
             "type": "alexanderzobnin-zabbix-datasource",
@@ -2895,8 +2891,9 @@
           "definition": "",
           "hide": 2,
           "includeAll": false,
+          "label": "EQUIPE",
           "multi": true,
-          "name": "EQUIPE",
+          "name": "equipe",
           "options": [],
           "query": {
             "cacheDurationSeconds": 300,
