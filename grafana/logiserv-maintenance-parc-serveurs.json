@@ -2800,12 +2800,8 @@
         {
           "allowCustomValue": false,
           "current": {
-            "text": [
-              "PARC LOGISERV"
-            ],
-            "value": [
-              "PARC LOGISERV"
-            ]
+            "text": "PARC LOGISERV",
+            "value": "PARC LOGISERV"
           },
           "datasource": {
             "type": "alexanderzobnin-zabbix-datasource",
@@ -2825,7 +2821,7 @@
             "queryType": "group"
           },
           "refresh": 1,
-          "regex": "$team",
+          "regex": "$Team",
           "sort": 1,
           "type": "query"
         },
