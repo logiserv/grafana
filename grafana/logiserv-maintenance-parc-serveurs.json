@@ -2801,10 +2801,10 @@
           "allowCustomValue": false,
           "current": {
             "text": [
-              "PARC ATP"
+              "PARC LOGISERV"
             ],
             "value": [
-              "PARC ATP"
+              "PARC LOGISERV"
             ]
           },
           "datasource": {
@@ -2826,7 +2826,7 @@
             "queryType": "group"
           },
           "refresh": 1,
-          "regex": "",
+          "regex": "$team",
           "sort": 1,
           "type": "query"
         },
@@ -2977,7 +2977,7 @@
             ],
             "method": "GET",
             "queryParams": "",
-            "urlPath": "/api/user/:$user/teams"
+            "urlPath": "/api/users/$user/teams"
           },
           "refresh": 1,
           "regex": "",
