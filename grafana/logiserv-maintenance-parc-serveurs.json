@@ -2808,30 +2808,6 @@
             ]
           },
           "datasource": {
-            "type": "mysql",
-            "uid": "felcwwvnhajuoa"
-          },
-          "definition": "SELECT name FROM grafana.team ",
-          "hide": 2,
-          "multi": true,
-          "name": "Team",
-          "options": [],
-          "query": "SELECT name FROM grafana.team ",
-          "refresh": 1,
-          "regex": "",
-          "type": "query"
-        },
-        {
-          "allowCustomValue": false,
-          "current": {
-            "text": [
-              "PARC LOGISERV"
-            ],
-            "value": [
-              "PARC LOGISERV"
-            ]
-          },
-          "datasource": {
             "type": "alexanderzobnin-zabbix-datasource",
             "uid": "delcwk6iuqtxca"
           },
@@ -2843,7 +2819,7 @@
           "options": [],
           "query": {
             "application": "",
-            "group": "/.*$team/",
+            "group": "/.*/",
             "host": "",
             "item": "",
             "itemTag": "",
@@ -2856,20 +2832,30 @@
         },
         {
           "current": {
-            "text": "All",
-            "value": "$__all"
+            "text": [
+              "All"
+            ],
+            "value": [
+              "$__all"
+            ]
           },
           "datasource": {
             "type": "alexanderzobnin-zabbix-datasource",
             "uid": "delcwk6iuqtxca"
           },
-          "definition": "$Group.*",
+          "definition": "",
           "includeAll": true,
           "label": "SERVEUR",
           "multi": true,
           "name": "Host",
           "options": [],
-          "query": "$Group.*",
+          "query": {
+            "application": "",
+            "group": "$Group",
+            "host": "/.*/",
+            "item": "",
+            "queryType": "host"
+          },
           "refresh": 1,
           "regex": "/.*SRV*/",
           "sort": 1,
@@ -2907,6 +2893,7 @@
             "uid": "aeld500nl44cgc"
           },
           "definition": "",
+          "hide": 2,
           "includeAll": false,
           "multi": true,
           "name": "team",
@@ -2937,6 +2924,7 @@
           },
           "refresh": 1,
           "regex": "",
+          "sort": 1,
           "type": "query"
         },
         {
@@ -2954,6 +2942,7 @@
             "uid": "celcwep1nq9z4b"
           },
           "definition": "SELECT name FROM zabbix.hstgrp WHERE name IN (${team:sqlstring})\n\n",
+          "hide": 2,
           "includeAll": false,
           "multi": true,
           "name": "group",
