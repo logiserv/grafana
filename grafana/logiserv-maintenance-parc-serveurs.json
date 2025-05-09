@@ -2859,19 +2859,19 @@
         },
         {
           "current": {
-            "text": "logiserv",
-            "value": "logiserv"
+            "text": "1",
+            "value": "1"
           },
           "hide": 2,
           "name": "user",
           "options": [
             {
               "selected": true,
-              "text": "logiserv",
-              "value": "logiserv"
+              "text": "1",
+              "value": "1"
             }
           ],
-          "query": "${__user.login}",
+          "query": "${__user.id}",
           "type": "custom"
         },
         {
@@ -2977,7 +2977,7 @@
             ],
             "method": "GET",
             "queryParams": "",
-            "urlPath": "/api/user/teams"
+            "urlPath": "/api/user/:$user/teams"
           },
           "refresh": 1,
           "regex": "",
