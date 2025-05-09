@@ -2798,6 +2798,7 @@
     "templating": {
       "list": [
         {
+          "allValue": "",
           "allowCustomValue": false,
           "current": {
             "text": [
