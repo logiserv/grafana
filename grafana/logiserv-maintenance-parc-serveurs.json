@@ -2825,10 +2825,10 @@
           "allowCustomValue": false,
           "current": {
             "text": [
-              "PARC ATP"
+              "PARC LOGISERV"
             ],
             "value": [
-              "PARC ATP"
+              "PARC LOGISERV"
             ]
           },
           "datasource": {
@@ -2843,9 +2843,10 @@
           "options": [],
           "query": {
             "application": "",
-            "group": "/.*$Team/",
+            "group": "/.*$team/",
             "host": "",
             "item": "",
+            "itemTag": "",
             "queryType": "group"
           },
           "refresh": 1,
