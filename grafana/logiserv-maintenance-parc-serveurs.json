@@ -2907,7 +2907,7 @@
             "uid": "aeld500nl44cgc"
           },
           "definition": "",
-          "hide": 2,
+          "includeAll": false,
           "multi": true,
           "name": "team",
           "options": [],
@@ -2935,6 +2935,30 @@
             "queryParams": "",
             "urlPath": "/api/user/teams"
           },
+          "refresh": 1,
+          "regex": "",
+          "type": "query"
+        },
+        {
+          "allowCustomValue": false,
+          "current": {
+            "text": [
+              "PARC LOGISERV"
+            ],
+            "value": [
+              "PARC LOGISERV"
+            ]
+          },
+          "datasource": {
+            "type": "mysql",
+            "uid": "celcwep1nq9z4b"
+          },
+          "definition": "SELECT name FROM zabbix.hstgrp WHERE name IN (${team:sqlstring})\n\n",
+          "includeAll": false,
+          "multi": true,
+          "name": "group",
+          "options": [],
+          "query": "SELECT name FROM zabbix.hstgrp WHERE name IN (${team:sqlstring})\n\n",
           "refresh": 1,
           "regex": "",
           "type": "query"
