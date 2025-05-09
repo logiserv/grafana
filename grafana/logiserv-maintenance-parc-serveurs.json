@@ -2832,9 +2832,7 @@
         },
         {
           "current": {
-            "text": [
-              "All"
-            ],
+            "text": "All",
             "value": [
               "$__all"
             ]
@@ -2895,6 +2893,7 @@
           "definition": "",
           "hide": 2,
           "includeAll": false,
+          "label": "EQUIPE",
           "multi": true,
           "name": "team",
           "options": [],
@@ -2945,9 +2944,42 @@
           "hide": 2,
           "includeAll": false,
           "multi": true,
-          "name": "group",
+          "name": "groupsql",
           "options": [],
           "query": "SELECT name FROM zabbix.hstgrp WHERE name IN (${team:sqlstring})\n\n",
+          "refresh": 1,
+          "regex": "",
+          "type": "query"
+        },
+        {
+          "allowCustomValue": false,
+          "current": {
+            "text": [
+              "PARC LOGISERV"
+            ],
+            "value": [
+              "PARC LOGISERV"
+            ]
+          },
+          "datasource": {
+            "type": "marcusolsson-json-datasource",
+            "uid": "aeld500nl44cgc"
+          },
+          "definition": "",
+          "multi": true,
+          "name": "group",
+          "options": [],
+          "query": {
+            "cacheDurationSeconds": 300,
+            "fields": [
+              {
+                "jsonPath": "$[*].name"
+              }
+            ],
+            "method": "GET",
+            "queryParams": "",
+            "urlPath": "/api/user/teams"
+          },
           "refresh": 1,
           "regex": "",
           "type": "query"
