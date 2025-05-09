@@ -2798,7 +2798,6 @@
     "templating": {
       "list": [
         {
-          "allValue": "",
           "allowCustomValue": false,
           "current": {
             "text": [
@@ -2978,7 +2977,7 @@
             ],
             "method": "GET",
             "queryParams": "",
-            "urlPath": "/api/users/$user/teams"
+            "urlPath": "/api/users/${__user.id}/teams"
           },
           "refresh": 1,
           "regex": "",
