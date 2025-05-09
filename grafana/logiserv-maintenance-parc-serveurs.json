@@ -2798,22 +2798,59 @@
     "templating": {
       "list": [
         {
+          "allowCustomValue": false,
           "current": {
-            "text": "PARC ATP",
-            "value": "PARC ATP"
+            "text": [
+              "PARC ATP"
+            ],
+            "value": [
+              "PARC ATP"
+            ]
+          },
+          "datasource": {
+            "type": "mysql",
+            "uid": "felcwwvnhajuoa"
+          },
+          "definition": "SELECT name FROM grafana.team ",
+          "hide": 2,
+          "multi": true,
+          "name": "Team",
+          "options": [],
+          "query": "SELECT name FROM grafana.team ",
+          "refresh": 1,
+          "regex": "",
+          "type": "query"
+        },
+        {
+          "allValue": "",
+          "allowCustomValue": false,
+          "current": {
+            "text": [
+              "PARC ATP"
+            ],
+            "value": [
+              "PARC ATP"
+            ]
           },
           "datasource": {
             "type": "alexanderzobnin-zabbix-datasource",
             "uid": "delcwk6iuqtxca"
           },
-          "definition": "*",
+          "definition": "",
           "includeAll": false,
           "label": "PARC",
+          "multi": true,
           "name": "Group",
           "options": [],
-          "query": "*",
+          "query": {
+            "application": "",
+            "group": "/.*$Team/",
+            "host": "",
+            "item": "",
+            "queryType": "group"
+          },
           "refresh": 1,
-          "regex": "$Team",
+          "regex": "",
           "sort": 1,
           "type": "query"
         },
@@ -2854,25 +2891,6 @@
           ],
           "query": "${__user.login}",
           "type": "custom"
-        },
-        {
-          "allowCustomValue": false,
-          "current": {
-            "text": "PARC ATP",
-            "value": "PARC ATP"
-          },
-          "datasource": {
-            "type": "mysql",
-            "uid": "felcwwvnhajuoa"
-          },
-          "definition": "SELECT name FROM grafana.team LIMIT 50 ",
-          "multi": true,
-          "name": "Team",
-          "options": [],
-          "query": "SELECT name FROM grafana.team LIMIT 50 ",
-          "refresh": 1,
-          "regex": "",
-          "type": "query"
         }
       ]
     },
