@@ -2814,7 +2814,6 @@
           "definition": "",
           "includeAll": false,
           "label": "PARC",
-          "multi": true,
           "name": "Group",
           "options": [],
           "query": {
@@ -2858,98 +2857,6 @@
           "type": "query"
         },
         {
-          "current": {
-            "text": "1",
-            "value": "1"
-          },
-          "hide": 2,
-          "name": "user",
-          "options": [
-            {
-              "selected": true,
-              "text": "1",
-              "value": "1"
-            }
-          ],
-          "query": "${__user.id}",
-          "type": "custom"
-        },
-        {
-          "allowCustomValue": false,
-          "current": {
-            "text": [
-              "PARC LOGISERV"
-            ],
-            "value": [
-              "PARC LOGISERV"
-            ]
-          },
-          "datasource": {
-            "type": "marcusolsson-json-datasource",
-            "uid": "aeld500nl44cgc"
-          },
-          "definition": "",
-          "hide": 2,
-          "includeAll": false,
-          "label": "EQUIPE",
-          "multi": true,
-          "name": "equipe",
-          "options": [],
-          "query": {
-            "cacheDurationSeconds": 300,
-            "fields": [
-              {
-                "jsonPath": "$[*].name",
-                "language": "jsonpath"
-              }
-            ],
-            "headers": [
-              [
-                "",
-                ""
-              ]
-            ],
-            "method": "GET",
-            "params": [
-              [
-                "",
-                ""
-              ]
-            ],
-            "queryParams": "",
-            "urlPath": "/api/user/teams"
-          },
-          "refresh": 1,
-          "regex": "",
-          "sort": 1,
-          "type": "query"
-        },
-        {
-          "allowCustomValue": false,
-          "current": {
-            "text": [
-              "PARC LOGISERV"
-            ],
-            "value": [
-              "PARC LOGISERV"
-            ]
-          },
-          "datasource": {
-            "type": "mysql",
-            "uid": "celcwep1nq9z4b"
-          },
-          "definition": "SELECT name FROM zabbix.hstgrp WHERE WHERE team = '${team:raw}'\n\n",
-          "hide": 2,
-          "includeAll": false,
-          "multi": true,
-          "name": "groupsql",
-          "options": [],
-          "query": "SELECT name FROM zabbix.hstgrp WHERE WHERE team = '${team:raw}'\n\n",
-          "refresh": 1,
-          "regex": "",
-          "type": "query"
-        },
-        {
           "allowCustomValue": false,
           "current": {
             "text": [
@@ -2966,7 +2873,7 @@
           "definition": "",
           "hide": 2,
           "multi": true,
-          "name": "team",
+          "name": "Team",
           "options": [],
           "query": {
             "cacheDurationSeconds": 300,
