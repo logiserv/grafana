@@ -2832,7 +2832,9 @@
         },
         {
           "current": {
-            "text": "All",
+            "text": [
+              "All"
+            ],
             "value": [
               "$__all"
             ]
@@ -2893,9 +2895,8 @@
           "definition": "",
           "hide": 2,
           "includeAll": false,
-          "label": "EQUIPE",
           "multi": true,
-          "name": "team",
+          "name": "EQUIPE",
           "options": [],
           "query": {
             "cacheDurationSeconds": 300,
