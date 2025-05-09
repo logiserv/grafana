@@ -2826,7 +2826,7 @@
             "queryType": "group"
           },
           "refresh": 1,
-          "regex": "$team",
+          "regex": "",
           "sort": 1,
           "type": "query"
         },
