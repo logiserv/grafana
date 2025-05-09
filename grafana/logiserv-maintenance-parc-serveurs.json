@@ -2826,7 +2826,7 @@
             "queryType": "group"
           },
           "refresh": 1,
-          "regex": "$equipe",
+          "regex": "$team",
           "sort": 1,
           "type": "query"
         },
@@ -2938,13 +2938,13 @@
             "type": "mysql",
             "uid": "celcwep1nq9z4b"
           },
-          "definition": "SELECT name FROM zabbix.hstgrp WHERE name IN (${team:sqlstring})\n\n",
+          "definition": "SELECT name FROM zabbix.hstgrp WHERE WHERE team = '${team:raw}'\n\n",
           "hide": 2,
           "includeAll": false,
           "multi": true,
           "name": "groupsql",
           "options": [],
-          "query": "SELECT name FROM zabbix.hstgrp WHERE name IN (${team:sqlstring})\n\n",
+          "query": "SELECT name FROM zabbix.hstgrp WHERE WHERE team = '${team:raw}'\n\n",
           "refresh": 1,
           "regex": "",
           "type": "query"
@@ -2964,8 +2964,9 @@
             "uid": "aeld500nl44cgc"
           },
           "definition": "",
+          "hide": 2,
           "multi": true,
-          "name": "group",
+          "name": "team",
           "options": [],
           "query": {
             "cacheDurationSeconds": 300,
